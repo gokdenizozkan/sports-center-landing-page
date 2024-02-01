@@ -1,0 +1,338 @@
+/* THEMEING */
+:root {
+    /* COLORS */
+    /* site theme colors */
+    --theme-font: 'Poppins', sans-serif;
+    --theme-base: #f39c12;
+    --theme-color: #355592;
+    --theme-black: #4e4e4e;
+    --theme-white: #ffffff;
+    --theme-ase: #afb2bf;
+    --theme-gray: #8e8e8e;
+    --theme-f6: #F1F8FF;
+    --theme-fb: #f6f6f6;
+    --theme-bg: linear-gradient(-110deg, #f6f6f6 50%, #fff 50%);
+
+    /* general */
+    --button-bg-color: var(--theme-color);
+    --button-color: white;
+
+    /* home */
+    --home-span-bg-color: var(--theme-color);
+    --home-h1-color: white;
+    --home-p-color: white;
+
+    /* stats */
+    --stats-bg-color: lightblue;
+    --stats-card-bg-color: white;
+    --stats-card-value-color: blue;
+    --stats-card-desc-color: black;
+
+    /* classes */
+    --classes-h1-color: var(--theme-color);
+    --classes-p-color: var(--theme-black);
+
+    --classes-button-bg-color: var(--theme-color);
+    --classes-button-bg-color-activated: var(--theme-base);
+    --classes-button-text-color: white;
+
+    --classes-tab-content-h3-color: black;
+    --classes-tab-content-p-color: var(--theme-black);
+
+    /* MISC */
+    --indicator-border: 20px solid var(--theme-base);
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--theme-font);
+}
+
+/* WRAPPER & CONTAINER */
+.wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* MISC */
+.section-title-separator {
+    width: 100px;
+    height: 10px;
+    background-color: var(--theme-base);
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.indicator {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+}
+
+/* HOME */
+#home {
+    background: url(../img/home-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 83vh;
+}
+
+#home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    height: 90%;
+}
+
+/** text styling **/
+#home .home-brand-name {
+    color: var(--home-h1-color);
+    background-color: var(--home-span-bg-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#home h1 {
+    color: var(--home-h1-color);
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#home p {
+    color: var(--home-p-color);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/** buttons **/
+#home .home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.button-bold {
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.button-hollow {
+    background-color: transparent;
+    color: var(--button-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid var(--button-color);
+}
+
+/* STATS */
+#stats {
+    background-color: var(--stats-bg-color);
+}
+
+#stats .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-stats {
+    padding: 25px 75px;
+    background-color: var(--stats-card-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    color: var(--stats-card-value-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-desc {
+    color: var(--stats-card-desc-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CLASSES */
+#classes {
+    background: var(--theme-bg);
+    padding: 50px 0;
+}
+
+#classes .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#classes h2 {
+    color: var(--classes-h1-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#classes p {
+    color: var(--classes-p-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/** classes tabs **/
+.classes-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.classes-tab-button {
+    background-color: var(--classes-button-bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.classes-tab-button-activated {
+    background-color: var(--classes-button-bg-color-activated);
+    color: var(--classes-button-text-color);
+}
+
+/** classes tab contents **/
+.classes-tab-contents {
+    margin-top: 10px;
+}
+
+.classes-tab-content {
+    display: none;
+}
+
+.classes-tab-content-activated {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.classes-tab-content img {
+    margin: 0 15px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+
+.classes-tab-content-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.classes-tab-content-text h3 {
+    color: var(--classes-tab-content-h3-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.classes-tab-content-text p {
+    color: var(--classes-tab-content-p-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* BMI-CALCULATOR */
+#bmi-calculator .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/** bmi calculator interact **/
+.bmi-calculator-interact {
+    width: 38%;
+}
+
+.bmi-calculator-interact-text-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.bmi-calculator-interact-text-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    gap: 10px;
+}
+
+.bmi-calculator-interact-text-field input {
+    width: 80%;
+}
+
+/** bmi calculator result **/
+#bmi-calculator .bmi-calculator-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#bmi-calculator .bmi-calculator-result .indicator {
+    border-bottom: var(--indicator-border); /* straight triangle */
+    position: relative;
+    margin-top: -20px;
+    left: 0; /** 6% to 86%  || gaps are 1% || level is +15% || jump to next level is 15 + 1 % */ /* 6 + 15 = 21*/
+}
+
+
+/* HOME */
+
+/* HOME */
