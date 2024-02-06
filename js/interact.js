@@ -1,9 +1,7 @@
 // general - general functions are prefixed with _
 function _findIndex(object, array) {
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === object) {
-            return i;
-        }
+        if (array[i] === object) return i;
     }
     return -1;
 }
@@ -20,8 +18,6 @@ let activeTab = document.querySelector(".classes-tab-button-activated");
 // _tab content management
 let tabContents = document.querySelectorAll(".classes-tab-content");
 let activeTabContent = document.querySelector(".classes-tab-content-activated");
-
-
 
 tabs.forEach((tab) => {
     tab.addEventListener("click", (e) => {
