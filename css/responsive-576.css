@@ -1,0 +1,267 @@
+/** HOME **/
+@media (max-width: 576px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #home .home-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    #home .home-buttons button {
+        width: 100%;
+    }
+}
+
+/** STATS **/
+@media (max-width: 576px) {
+    #stats .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 65%;
+    }
+
+    #stats .container .card-stats {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/** CLASSES **/
+@media (max-width: 576px) {
+    #classes .centerable {
+        text-align: center;
+    }
+
+    #classes .classes-tabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+        gap: 10px;
+    }
+
+    #classes .classes-tab-content-activated {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .classes-tab-content-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            width: 50%;
+        }
+    }
+}
+
+/** BMI CALC **/
+@media (max-width: 576px) {
+    #bmi-calculator .justifyable {
+        text-align: justify;
+    }
+
+    #bmi-calculator .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .bmi-calculator-interact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bmi-calculator-interact-text-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+/** TRAINERS **/
+@media (max-width: 576px) {
+    #trainers .centerable {
+        text-align: center;
+    }
+
+    .trainers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+/** PRODUCTS / PURCHASES **/
+@media (max-width: 576px) {
+    #purchase .centerable {
+        text-align: center;
+    }
+
+    #purchase .products {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product {
+        width: 70%;
+    }
+
+    .product button {
+        gap: 33%;
+    }
+}
+
+/** TESTIMONIAL **/
+@media (max-width: 576px) {
+    #testimonials .centerable {
+        text-align: center;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+    }
+}
+
+/** CONTACT **/
+@media (max-width: 576px) {
+    #contact .centerable {
+        text-align: center;
+    }
+
+    #contact .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-split-into-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        gap: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-map {
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        box-sizing: border-box;
+        margin-left: 7%;
+    }
+}
+
+/** FOOTER **/
+@media (max-width: 576px) {
+    #footer img {
+        width: 50%;
+    }
+}
+
+/** NAVBAR **/
+@media (max-width: 576px) {
+    /** NAVBAR **/
+    #navbar {
+        background-color: var(--theme-color);
+        padding: 0;
+        position: fixed;
+        align-content: center;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    #navbar .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #navbar-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 15px;
+
+        span {
+            background-color: var(--theme-white);
+            width: 50px;
+            height: 10px;
+            margin: 5px;
+            display: block;
+        }
+    }
+
+    .navbar-hamburger-activated span {
+        background-color: var(--theme-base) !important;
+    }
+
+    #navbar nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    #navbar .display-none {
+        display: none;
+    }
+
+    /** logo **/
+    #navbar img {
+        width: 50%;
+        height: 5%;
+    }
+}
+
+/** MISC **/
+@media (max-width: 576px) {
+    .rp-width-minus-quarter {
+        width: 75%;
+    }
+}

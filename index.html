@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-576.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sports Center</title>
 </head>
 <body>
 <div class="wrapper">
     <!-- NAVBAR -->
-    <section id="navbar">
+    <section id="navbar" class="navbar-at-top">
         <div class="container">
             <img src="img/logo.png" alt="Logo">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#classes">Classes</a>
-                <a href="#trainers">Trainers</a>
-                <a href="#purchase">Purchase</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
+            <nav class="display-none">
+                <a class="navbar-nav" href="#home">Home</a>
+                <a class="navbar-nav" href="#classes">Classes</a>
+                <a class="navbar-nav" href="#trainers">Trainers</a>
+                <a class="navbar-nav" href="#purchase">Purchase</a>
+                <a class="navbar-nav" href="#testimonials">Testimonials</a>
+                <a class="navbar-nav" href="#contact">Contact</a>
+                <button class="navbar-nav button-bold button-theme-base">Sign Up</button>
             </nav>
+            <div id="navbar-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </section>
 
@@ -29,12 +36,14 @@
         <div class="container">
             <span class="home-brand-name">POWERFULL</span>
             <h1>Group<br>Practice<br>With Trainer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis dignissim neque. Sed vitae mauris
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis dignissim neque. Sed vitae
+                mauris
                 venenatis, blandit massa sed, euismod diam. Vestibulum semper vel augue in egestas. Vestibulum ante
                 ipsum
                 primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer dignissim quis ligula non
                 porta.
-                In vestibulum auctor arcu a pellentesque. Vivamus ac aliquet est. Etiam varius mauris ac risus bibendum,
+                In vestibulum auctor arcu a pellentesque. Vivamus ac aliquet est. Etiam varius mauris ac risus
+                bibendum,
                 efficitur tristique ipsum fermentum. Nullam sit amet urna laoreet, ullamcorper tortor non, auctor
                 eros.</p>
             <div class="home-buttons">
@@ -49,19 +58,19 @@
         <div class="container">
             <div class="card-stats">
                 <span class="stat-value">325</span>
-                <span class="stat-desc">325</span>
+                <span class="stat-desc">Course</span>
             </div>
             <div class="card-stats">
-                <span class="stat-value">325</span>
-                <span class="stat-desc">325</span>
+                <span class="stat-value">405</span>
+                <span class="stat-desc">Work Out</span>
             </div>
             <div class="card-stats">
-                <span class="stat-value">325</span>
-                <span class="stat-desc">325</span>
+                <span class="stat-value">305</span>
+                <span class="stat-desc">Working Hour</span>
             </div>
             <div class="card-stats">
-                <span class="stat-value">325</span>
-                <span class="stat-desc">325</span>
+                <span class="stat-value">705</span>
+                <span class="stat-desc">Happy Client</span>
             </div>
         </div>
     </section>
@@ -71,7 +80,7 @@
         <div class="container">
             <h2>OUR CLASSES</h2>
             <span class="section-title-separator"></span>
-            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
+            <p class="centerable rp-width-minus-quarter">Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
                 College.</p>
             <div class="classes-tabs">
                 <button class="classes-tab-button classes-tab-button-activated">YOGA</button>
@@ -152,7 +161,7 @@
             <!-- this container has flex with row direction to split the section into two vertically-->
             <div class="bmi-calculator-interact">
                 <h3>BMI Calculator</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                <p class="justifyable">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                     classical Latin literature from 45 BC, making it over 2000 years old.<br><br>Contrary to popular
                     belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
                     from 45 BC, making it over 2000 years old.</p>
@@ -180,7 +189,7 @@
         <div class="container">
             <h2>OUR TRAINERS</h2>
             <span class="section-title-separator"></span>
-            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
+            <p class="centerable">Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
                 College.</p>
             <div class="trainers">
                 <div class="trainer">
@@ -234,7 +243,7 @@
         <div class="container">
             <h2>PURCHASE FROM US</h2>
             <span class="section-title-separator"></span>
-            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
+            <p class="centerable">Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
                 College.</p>
             <div class="products">
                 <div class="product">
@@ -270,7 +279,7 @@
         <div class="container">
             <h2>REVIEW CLIENT</h2>
             <span class="section-title-separator"></span>
-            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
+            <p class="centerable">Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
                 College.</p>
             <div class="testimonials">
                 <div class="testimonial">
@@ -312,7 +321,7 @@
         <div class="container">
             <h2>CONTACT US</h2>
             <span class="section-title-separator"></span>
-            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
+            <p class="centerable">Lorem Ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney
                 College.</p>
             <div class="contact-split-into-2">
                 <div class="contact-info-and-form">

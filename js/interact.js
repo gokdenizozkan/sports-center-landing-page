@@ -116,3 +116,19 @@ function _setBmiLevelIndicator(bmi) {
     86 => ?
      */
 }
+
+// navbar
+let navbar = document.getElementById("navbar");
+let scrolledDown = () => window.scrollY > 100;
+
+window.addEventListener("scroll", ()=>
+    scrolledDown() ? navbar.classList.remove("navbar-at-top") : navbar.classList.add("navbar-at-top"));
+
+// _responsive
+let hamburger = document.getElementById("navbar-hamburger");
+let nav = navbar.getElementsByTagName("nav")[0];
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("navbar-hamburger-activated");
+    nav.classList.toggle("display-none");
+});
